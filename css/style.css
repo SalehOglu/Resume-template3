@@ -1,0 +1,429 @@
+*{
+    box-sizing: border-box;
+}
+
+
+a{
+    text-decoration: none;
+    color:#b5a9b7;
+    transition: all 1s ease-in-out;
+    margin-bottom: 10px;
+   
+}
+
+
+a:hover{
+    animation: arrow 1s ease-in-out infinite;
+    
+}
+
+@keyframes arrow {
+    0% { transform: translateY(5px)}
+    100% { transform: translateY(-5px)}
+}
+
+
+
+/*** Start Header ***/
+
+header{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url(../images/HEADER.jpg);
+  background-size: cover;
+  filter: grayscale(50%)  brightness(75%);
+}
+
+
+.navbar  {
+    color: #b5a9b7;
+    background-color: rgba(0,0,0,0.4)
+}
+
+nav .navbar-brand{
+   
+    font-size: 1.5em;
+}
+nav .navbar-brand:hover{
+    color: #b5a9b7;
+}
+
+
+nav .navbar-nav a{
+   
+    font-size: 0.85em;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .navbar-nav a:hover{
+    color: white;
+    background-color: #b5a9b7;
+}
+
+header .text{
+    color: white;
+    text-align: left;
+    position: absolute;
+    width: 40%;
+    top: 35%;
+    left: 40%
+}
+
+
+@media (max-width:900px){
+    header .text{
+        top:25%;
+        left: 25%;
+        width: 60%;
+    }
+   
+    header{
+        margin-bottom: -17px;
+    }
+}
+
+@media (max-width:630px){
+    header .text{
+        top:25%;
+        left: 25%;
+        width: 70%;
+        
+    }
+    header .text span{
+        display: block
+    }
+    header .text p{
+        width: 60%;
+        padding-top: 30px;
+    }
+    
+}
+
+
+header .text  h2{
+    color: #b5a9b7;
+    line-height: 2;
+    
+}
+
+
+header .text h2 span{
+    font-size: 1.4em;
+    color: white;
+}
+
+header .text  h3{
+    letter-spacing: 2px;
+}
+
+header .text  p{
+    color: #dec2e2;
+    padding-top:  20px;
+}
+
+
+header .arr-d{
+   
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    margin-bottom: 40px;
+    
+    
+}
+
+@media (max-width:600px){
+    header .arr-d{
+        left: 80%;
+        top: 80%
+    }
+}
+
+/****** Start About ******/
+
+main{
+    padding: 50px;
+    background-color: #281d25;
+    color: white;
+
+}
+
+
+main .title h2{
+    color:#b5a9b7;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+main .title p{
+    width: 60%;
+    padding-bottom: 50px;
+    color:#b5a9b7;
+    margin: 0 auto; 
+}
+
+main .work{
+    color: white;
+    margin-bottom: 30px;
+}
+
+main .work h5{
+    letter-spacing: 1.8px;
+}
+
+main .work p{
+    font-style: italic;
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+@media (max-width:600px){
+    main .work p{
+        width: 70%;
+    }
+}
+
+
+
+/***** Start Skills ******/
+
+.skills{
+    
+    padding: 50px;
+    color: #000;
+}
+
+.skills h2{
+    margin-bottom: 50px;
+    position: relative;
+ color: #30222a
+}
+
+.skills h2::before{
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    top: 40px;
+    left: 299px;
+    border-bottom: 2px solid #b5a9b7;
+}
+
+.skills h2::after{
+     content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    top: 40px;
+    right: 299px;
+    border-bottom: 2px solid #b5a9b7;
+}
+
+.skills .chart .circle-chart{
+    margin-bottom: 40px;
+}
+
+.skills  .circle-chart__background {
+    stroke: #94898d ;
+    stroke
+}
+
+.skills .circle-chart .success-stroke{
+    stroke:#30222a;
+    
+}
+
+.skills .chart p{
+    font-size: 1.8em;
+    margin-bottom: 80px;
+}
+
+/**** Start Portfolio *****/
+
+
+.portfolio{
+ background-color: #20191b;
+    padding: 50px;
+    color: #94898d;
+}
+
+.portfolio h2{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.portfolio h2::before{
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    top: 40px;
+    left: 230px;
+    border-bottom: 2px solid #b5a9b7;
+}
+
+.portfolio h2::after{
+     content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    top: 40px;
+    right: 230px;
+    border-bottom: 2px solid #b5a9b7;
+}
+
+.portfolio .gallery {
+    margin: 20px 0 60px;
+}
+
+.portfolio .gallery img{
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000
+}
+
+.portfolio .gallery img:hover{
+    transform: scale(1.2)
+}
+
+.portfolio .gallery p{
+    color: #94898d;
+    width: 70%;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+
+
+
+/****** Start Contact ******/
+
+footer{
+/*    background-image: url("../images/view.jpg");*/
+    background-size: cover;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("../images/view.jpg");
+  background-size: cover;
+  filter: grayscale(300%)  brightness(40%);
+}
+
+.contact h2{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contact h2::before{
+   content: "";
+    position: absolute;
+    width: 225px;
+    height: 3px;
+    top: 40px;
+    left: 309px;
+    border-bottom: 2px solid #b5a9b7;
+}
+
+.contact h2::after{
+     content: "";
+    position: absolute;
+    width: 225px;
+    height: 3px;
+    top: 40px;
+    right: 309px;
+    border-bottom: 2px solid #b5a9b7;
+}
+
+
+footer form{
+    width: 70%;    
+}
+
+@media (max-width:900px){
+    footer form{
+        width: 100%;
+        margin-top: 45px
+    }
+}
+
+footer form .form-group .form-control {
+    background-color: #180f12;
+    color: white;
+    height: 50px;
+}
+
+footer form .btn{
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border: 1px solid #FFF;
+    transition: all 1s ease-in-out;
+}
+
+footer form .btn:hover{
+    background-color: #20191b;
+   
+    color: #94898d;
+}
+
+
+footer .text svg{
+    margin-bottom: 20px;
+    margin-right: 5px;
+    padding-top: 0;
+    color: #b5a9b7 !important;
+    
+}
+
+
+footer .text p{ 
+    width: 70%;
+    line-height: 1.4;
+    color: #b5a9b7;
+    
+}
+
+
+footer .row{
+    padding-bottom: 50px
+}
+
+footer .up a{
+   
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    
+}
