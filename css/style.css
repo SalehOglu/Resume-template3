@@ -14,7 +14,19 @@ a{
 
 a:hover{
     animation: arrow 1s ease-in-out infinite;
-    
+    -webkit-animation: arrow 1s ease-in-out infinite;
+      -moz-animation: arrow 1s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes arrow {
+    0% { transform: translateY(5px)}
+    100% { transform: translateY(-5px)}
+}
+
+@-moz-keyframes arrow {
+    0% { transform: translateY(5px)}
+    100% { transform: translateY(-5px)}
 }
 
 @keyframes arrow {
@@ -41,6 +53,9 @@ header::before {
   background-image: url(../images/HEADER.jpg);
   background-size: cover;
   filter: grayscale(50%)  brightness(75%);
+   -webkit-filter: grayscale(50%)  brightness(75%);
+   -moz-filter: grayscale(50%)  brightness(75%);
+   -ms-filter: grayscale(50%)  brightness(75%);
 }
 
 
