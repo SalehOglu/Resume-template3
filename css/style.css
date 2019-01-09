@@ -73,6 +73,10 @@ nav .navbar-brand:hover{
 }
 
 
+nav .navbar-toggler{
+    border-color: #b5a9b7 ;
+}
+
 nav .navbar-nav a{
    
     font-size: 0.85em;
